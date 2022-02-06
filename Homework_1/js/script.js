@@ -1,21 +1,22 @@
-const PI = Math.PI;
-let radius = 10;
-let height = 20;
-let volume = PI * radius * height;
-let s = PI*radius**2;
+let radius = 25;
+let height = 40;
+let volume = Math.PI * Math.pow(radius, 2) * height;
+let S = Math.PI*Math.pow(radius, 2);
+let dashes = `---------------------`;
+
 
 console.log(`**************
-Объем цилиндра с площадью основы S = ${s}, радиусом R =  ${radius}, и высотой H = ${height} равен:
----------------------
+Объем цилиндра с площадью основы S = ${S}, радиусом R = ${radius} и высотой H = ${height} равен:
+${dashes}
 V = ${volume}
----------------------
+${dashes}
 end.`);
 
 // Один в один як в завданні, де значення мають різні кольори й знаходяться на різних рядках
 
-console.log(`**************`);
-console.log(`Объем цилиндра с площадью основы S =`, s, `, радиусом R =`, radius, ` и высотой H =`, height,` равен:`);
-console.log(`---------------------`);
-console.log(`V =`, volume);
-console.log(`---------------------`);
-console.log(`end.`);
+// console.log(`**************`);
+// console.log(`Объем цилиндра с площадью основы S =`, S, `, радиусом R =`, radius, ` и высотой H =`, height,` равен:`);
+// console.log(dashes)
+// console.log(`V =`, volume);
+// console.log(dashes)
+// console.log(`end.`);
